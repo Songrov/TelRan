@@ -1,6 +1,6 @@
 package telran.homework.lesson2.figure;
 
-public class Triangle extends Figure{
+public class Triangle extends Figure {
     private double a;
     private double b;
     private double c;
@@ -11,10 +11,11 @@ public class Triangle extends Figure{
         this.c = c;
     }
 
-    // S={\sqrt {p(p-a)(p-b)(p-c)}}
 
-    //@Override
-    public double Area() {
-        return 0;
+    @Override
+    public double calculateArea() {
+        double p = (a + b + c) / 2;
+        double area = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        return area;
     }
 }
