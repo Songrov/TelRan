@@ -1,2 +1,4 @@
-package telran.homework.lesson3;public class Test2 {
+package telran.homework.lesson3;
+
+public class Test2 {
 }
