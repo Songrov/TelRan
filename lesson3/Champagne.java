@@ -1,6 +1,6 @@
 package telran.homework.lesson3;
 
-public enum Shampani {
+public enum Champagne {
 
     AUTRE, PREMIER, GRAND
 }
