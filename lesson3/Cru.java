@@ -1,15 +1,20 @@
 package telran.homework.lesson3;
 
-public class Cru {
+public enum Cru {
+    AUTRE(80),
+    PREMIER(90),
+    GRAND(100);
 
+    private int quality;
 
+    Cru(int quality) {
+        this.quality = quality;
+    }
 
-
-
-
-
-
-    //1. Шампань - создать перечисление Cru для деревень Шампани с указанием уровня качества
+    public int getQuality() {
+        return quality;
+    }
+//1. Шампань - создать перечисление Cru для деревень Шампани с указанием уровня качества
     //AUTRE(80), PREMIER(90), GRAND(100)
     //Добавьте int quality, конструктор и геттер
     //Добавьте в перечисление Weekday метод boolean isWeekEnd(),
