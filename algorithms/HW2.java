@@ -11,7 +11,7 @@ void test1(int n)
            System.out.println("*");
            break;
 }
-Ответ O(n^2)
+Ответ O(n)
 
 
 void test2(int n)
@@ -21,7 +21,7 @@ void test2(int n)
       for (j = n; j > i; j--)
           a = a + i + j;
 
-}  Ответ O(n)
+}  Ответ O(n2)-- О от n в квадрате
 
 
 
