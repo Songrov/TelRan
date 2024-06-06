@@ -15,10 +15,12 @@ one
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Stack;
 
 public class ReverseInput {
 
     public static void main(String[] args) {
+        Stack<String> stack = new Stack<>();
         Scanner scanner = new Scanner(System.in);
         List<String> lines = new ArrayList<>();
 

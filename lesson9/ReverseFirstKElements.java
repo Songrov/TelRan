@@ -1,15 +1,16 @@
 package telran.homework.lesson9;
 /*
-Напишите метод, который принимает на вход список целых и число kМетод должен возвратить список, в котором первые k чисел поменялись местами и должны находится в обратном порядке
+Напишите метод, который принимает на вход список целых и число kМетод должен возвратить список, в котором первые k
+чисел поменялись местами и должны находится в обратном порядке
 Например: [10, 20, 30, 40, 50], 4 -> [40, 30, 20, 10, 50]
 Сделайте с помощью стэков/очередей/деков
  */
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 public class ReverseFirstKElements {
     public static void main(String[] args) {
+        Stack<Integer> s = new Stack<>();
+        Queue<Integer> q = new LinkedList<>();
         List<Integer> numbers = new ArrayList<>();
         numbers.add(10);
         numbers.add(20);
@@ -19,9 +20,9 @@ public class ReverseFirstKElements {
 
         int k = 4;
 
-        System.out.println("Original list: " + numbers);
+        System.out.println("Порядок: " + numbers);
         List<Integer> result = reverseFirstK(numbers, k);
-        System.out.println("Modified list: " + result);
+        System.out.println("Обратный порядок: " + result);
     }
 
     public static List<Integer> reverseFirstK(List<Integer> list, int k) {
