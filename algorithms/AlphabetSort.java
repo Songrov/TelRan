@@ -1,7 +1,8 @@
 package telran.homework.algorithms;
 
 
-    public enum AlphabetSort {
+    public class AlphabetSort {
+
         public static void main(String[] args) {
             String input = "poiuytrewqlkjhgfdsamnbvcxz";
             char[] charArray = input.toCharArray();
