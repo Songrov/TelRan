@@ -1,5 +1,8 @@
 package telran.homework.algorithms.HW6;
-
+/*
+Написать код, который принимает на вход массив и число элементов, и возвращает новый массив,
+ который содержит все элементы исходного массива и заданное число новых элементов.
+ */
 import java.util.Arrays;
 
     public class ArrayExpansion {
