@@ -1,7 +1,10 @@
 package telran.homework.algorithms;
 
 import java.util.Stack;
-
+/*
+Последовательность ([{}]) является правильной, а последовательности ([)], {()]
+ правильными не являются. Докажите это используя стек!
+ */
 public class HW6 {
 
     public static void main(String[] args) {
