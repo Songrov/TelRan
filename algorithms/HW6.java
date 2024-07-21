@@ -1,6 +1,9 @@
 package telran.homework.algorithms;
 
 import java.util.Stack;
+
+import static telran.homework.algorithms.HW6.BracketValidator.isValid;
+
 /*
 Последовательность ([{}]) является правильной, а последовательности ([)], {()]
  правильными не являются. Докажите это используя стек!

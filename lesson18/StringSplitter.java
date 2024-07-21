@@ -12,6 +12,7 @@ public class StringSplitter {
     public static void main(String[] args) {
         String line = "michael;levanov|34|34000";
         String[] parts = line.split("");
+       // String[] parts = line.split("df");
 
         // Печатаем составные части строки
         for (String part : parts) {
