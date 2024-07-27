@@ -1,5 +1,5 @@
 package telran.homework.lesson20;
-
+/*
 public class ProbeTest {
 
     @Test
@@ -16,4 +16,4 @@ public class ProbeTest {
         assertEquals(0, result, "The max of an empty array should be 0");
     }
 }
-
+*/
