@@ -3,11 +3,18 @@ package telran.homework.lesson20;
 /*
 public class EvenNumbersTest {
 
-    @Test
-    public void testAllValuesAreEven() {
+     @Test
+    public void testAllElementsAreOdd() {
         List<Integer> odds = List.of(22, 12, 6);
-        // Проверяем, что каждый элемент списка четный
-        MatcherAssert.assertThat(odds, everyItem(Matchers.both(is((Integer i) -> i % 2 == 0)).and(is(Integer.class))));
+        assertThat(
+              odds,
+                Matchers.everyItem(
+              new LambdaMatcher<>(
+                      "All elements shuld be odd",
+                      i -> i % 2 == 0
+              )
+                )
+        );
     }
 }
 */
