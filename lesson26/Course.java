@@ -32,8 +32,8 @@ public class Course {
     public static void main(String[] args) {
         try {
             Class<Course> courseClass = Course.class;
-           Constructor<Course> constructor = courseClass.getConstructor(String.class, int.class, double.class);
-           Course courseInstance = constructor.newInstance("Computer Science", 6, 1500.0);
+            Constructor<Course> constructor = courseClass.getConstructor(String.class, int.class, double.class);
+            Course courseInstance = constructor.newInstance("Computer Science", 6, 1500.0);
 
             Method toStringMethod = courseClass.getMethod("toString");
 
