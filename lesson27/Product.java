@@ -6,49 +6,38 @@ GET http://localhost:8080/products/sortBy?by=price&how=desc
 by - поле - price, name, id
 how - desc, asc
  */
-public class Product {
-    private Long id;
-    private String name;
-    private double price;
 
-    // Конструкторы, геттеры и сеттеры
+import java.util.Comparator;
 
-    public Product(Long id, String name, double price) {
-        this.id = id;
-        this.name = name;
-        this.price = price;
+@GetMapping("/products/sortBy")
+public Iterable<Product> sortBy(
+        @RequestParam (name = "by", defaultValue = "id") String by,
+        @RequestParam (name = "how", defaultValue = "asc") String how
+) {
+    Comparator<Product> comparator = null;
+    if(by.equals("id") || by.equals("name") || by.equals("price")) {
+        switch (by) {
+            case "id":
+                comparator = Comparator.comparing(Product::getId);
+                break;
+            case "name":
+                comparator = Comparator.comparing(Product::getName);
+                break;
+            case "price":
+                comparator = Comparator.comparing(Product::getPrice);
+                break;
+        }
+    } else {
+        throw new IllegalArgumentException("No " + by + " field in Product");
     }
-
-    public Long getId() {
-        return id;
+    if (how.equals("desc")) {
+        comparator = comparator.reversed();
+    } else if (how.equals("asc")) {
+        //
+    } else {
+        throw new IllegalArgumentException("No " + how + " in sort");
     }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    @Override
-    public String toString() {
-        return "Product{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                '}';
-    }
+    return products.stream()
+            .sorted(comparator)
+            .toList();
 }
