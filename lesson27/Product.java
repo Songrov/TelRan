@@ -5,7 +5,7 @@ package telran.homework.lesson27;
 GET http://localhost:8080/products/sortBy?by=price&how=desc
 by - поле - price, name, id
 how - desc, asc
- */
+
 
 import java.util.Comparator;
 
@@ -41,3 +41,6 @@ public Iterable<Product> sortBy(
             .sorted(comparator)
             .toList();
 }
+
+
+ */
