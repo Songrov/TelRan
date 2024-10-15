@@ -1,6 +1,6 @@
 package telran.homework;
 
-
+/*
     // 1.Добавьте валидацию в класс Card что name должно быть не пустым и длиной не менее 5 символов
     @Entity
     @Table(name = "cards")
@@ -67,3 +67,4 @@ package telran.homework;
     }
 
 
+*/

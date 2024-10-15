@@ -1,11 +1,11 @@
 
 
-
+/*
 
 public class Comments {
-/*
+
 1. Добавьте в контроллер комментариев удаление комментария по идентификатору - DELETE для /comments/{id}
- */
+
     // удаление комментария по идентификатору
     @DeleteMapping("/comments/{id}")
     public ResponseEntity<Comments> deleteCommentsById(
@@ -26,7 +26,7 @@ public class Comments {
 
 /*
 Добавьте изменение комментария по идентификатору - PUT для /comments/{id} c приемом json тела коммента для изменения
- */
+
 
     // изменение коментария по ее идентификатору
     // PUT http://localhost:8080/cards/1
@@ -42,3 +42,4 @@ public class Comments {
         return commentsRepository.save(comments);
     }
 
+*/

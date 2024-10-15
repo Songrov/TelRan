@@ -1,5 +1,5 @@
 package telran.homework;
-
+/*
 //1. Добавьте обработку ошибок в CardsController чтобы исключение возвращалось в осмысленном виде
 // GET http://localhost:8080/cards/2
 @GetMapping("/cards/{id}")
@@ -70,3 +70,4 @@ public interface CommentsRepository extends CrudRepository<Comment, Long> {
 
 
 //(x) 3. Добавьте в CardController вызов этого метода, чтобы для указанной карты возвращались все комменты для всех ее товаров
+*/

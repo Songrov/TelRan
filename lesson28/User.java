@@ -1,6 +1,6 @@
 package telran.homework.lesson28;
 
-
+/*
 import de.telran.myshop.repository.CommentsRepository;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -45,3 +45,4 @@ public class User {
 //    private UserDetail userDetail;
 
 }
+*/

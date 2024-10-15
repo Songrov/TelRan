@@ -1,4 +1,11 @@
 package com.example.locker220124.entity;
+/*
+. Добавьте пользователя alex из группы ARTISTS
+Создайте в контроллере новый метод music, принимающий строку и возвращающий эту строку в верхнем регистре
+Разрешите выполение этого метода контроллера только членам группу ARTISTS
+4. Сделайте так, чтобы вызов этого метода логировался в консоль приложения с уровнем INFO
+ c помощью AOP в виде: "метод пользователь группа вход выход"
+
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
@@ -33,6 +40,6 @@ public class Alex {
     )
     private Set<Authority> authorities = new HashSet<>();
 }
-
+*/
 
 
